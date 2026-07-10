@@ -1,0 +1,7 @@
+{
+    "executionEnvironments": [
+        { "root": "." }
+    ],
+    "include": ["."],
+    "exclude": ["__pycache__", "dataset_cache", "checkpoints", "figures", "triplet_network"]
+}
