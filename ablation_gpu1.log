@@ -1,0 +1,660 @@
+[2026-07-10 02:52:26] INFO: Log file: ./logs/ablation_20260710_025226.log
+[2026-07-10 02:52:26] INFO: ======================================================================
+[2026-07-10 02:52:26] INFO: Margin Ablation Study
+[2026-07-10 02:52:26] INFO: ======================================================================
+[2026-07-10 02:52:26] INFO: Margin values: [0.2, 0.5, 1.0, 1.5, 2.0]
+[2026-07-10 02:52:26] INFO: Epochs per experiment: 10
+[2026-07-10 02:52:26] INFO: Triplets per class: 30
+[2026-07-10 02:52:26] INFO: ======================================================================
+[2026-07-10 02:52:26] INFO: 
+######################################################################
+[2026-07-10 02:52:26] INFO: # Experiment 1/5: margin = 0.2
+[2026-07-10 02:52:26] INFO: ######################################################################
+GPU: NVIDIA A10
+[2026-07-10 02:52:26] INFO: Device: cuda
+[2026-07-10 02:52:26] INFO: Loading datasets...
+
+Writers split (seed=42):
+  Train: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  Val: [13, 14, 15, 16]
+  Test: [17, 18, 19, 20]
+
+Alphabet split:
+  Train: 28 alphabets (no Braille/Balinese)
+  Val: 10 alphabets (no Braille/Balinese)
+  Test: 10 alphabets (user specified)
+  Loaded from cache: background_[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]_880_30
+  Loaded from cache: background_[13, 14, 15, 16]_284_15
+  Loaded from cache: evaluation_[17, 18, 19, 20]_409_15
+
+Dataset sizes:
+  Train: 52800 triplets
+  Val: 8520 triplets
+  Test: 12270 triplets
+  Total: 73590 triplets
+[2026-07-10 02:52:27] INFO: Data loading completed in 1s
+Test alphabets: 7
+[2026-07-10 02:52:28] INFO: Training started | Epochs: 10 | Margin: 0.2
+[2026-07-10 02:52:28] INFO: Epoch 1/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 50.00%
+
+Result: 50.00% (50/100)
+Time: 0s
+[2026-07-10 02:53:27] INFO: Train Loss: 0.1179 | Val Acc: 74.08% | Test Acc: 50.00% | Time: 59s
+[2026-07-10 02:53:27] INFO: Epoch 2/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 45.00%
+
+Result: 45.00% (45/100)
+Time: 0s
+[2026-07-10 02:54:26] INFO: Train Loss: 0.1014 | Val Acc: 74.05% | Test Acc: 45.00% | Time: 59s
+[2026-07-10 02:54:26] INFO: Epoch 3/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 61.00%
+
+Result: 61.00% (61/100)
+Time: 0s
+[2026-07-10 02:55:26] INFO: Train Loss: 0.0874 | Val Acc: 74.11% | Test Acc: 61.00% | Time: 59s
+[2026-07-10 02:55:26] INFO: Epoch 4/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 52.00%
+
+Result: 52.00% (52/100)
+Time: 0s
+[2026-07-10 02:56:27] INFO: Train Loss: 0.0789 | Val Acc: 74.58% | Test Acc: 52.00% | Time: 1m 0s
+[2026-07-10 02:56:27] INFO: Epoch 5/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 53.00%
+
+Result: 53.00% (53/100)
+Time: 0s
+[2026-07-10 02:57:27] INFO: Train Loss: 0.0736 | Val Acc: 74.11% | Test Acc: 53.00% | Time: 1m 0s
+[2026-07-10 02:57:27] INFO: Epoch 6/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 53.00%
+
+Result: 53.00% (53/100)
+Time: 0s
+[2026-07-10 02:58:27] INFO: Train Loss: 0.0655 | Val Acc: 73.80% | Test Acc: 53.00% | Time: 1m 0s
+[2026-07-10 02:58:27] INFO: Epoch 7/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 61.00%
+
+Result: 61.00% (61/100)
+Time: 0s
+[2026-07-10 02:59:28] INFO: Train Loss: 0.0631 | Val Acc: 74.07% | Test Acc: 61.00% | Time: 1m 0s
+[2026-07-10 02:59:28] INFO: Epoch 8/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 63.00%
+
+Result: 63.00% (63/100)
+Time: 0s
+[2026-07-10 03:00:28] INFO: Train Loss: 0.0605 | Val Acc: 74.35% | Test Acc: 63.00% | Time: 1m 0s
+[2026-07-10 03:00:28] INFO: Epoch 9/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 67.00%
+
+Result: 67.00% (67/100)
+Time: 0s
+[2026-07-10 03:01:28] INFO: Train Loss: 0.0554 | Val Acc: 74.26% | Test Acc: 67.00% | Time: 1m 0s
+[2026-07-10 03:01:28] INFO: Epoch 10/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 54.00%
+
+Result: 54.00% (54/100)
+Time: 0s
+[2026-07-10 03:02:28] INFO: Train Loss: 0.0547 | Val Acc: 74.11% | Test Acc: 54.00% | Time: 1m 0s
+[2026-07-10 03:02:28] INFO: Experiment completed in 10m 0s
+[2026-07-10 03:02:28] INFO: 
+Result for margin=0.2:
+[2026-07-10 03:02:28] INFO:   Best Test Acc: 67.00%
+[2026-07-10 03:02:28] INFO:   Final Val Acc: 74.11%
+[2026-07-10 03:02:28] INFO:   Epochs: 10
+[2026-07-10 03:02:28] INFO:   Time: 10m 0s
+[2026-07-10 03:02:28] INFO: 
+######################################################################
+[2026-07-10 03:02:28] INFO: # Experiment 2/5: margin = 0.5
+[2026-07-10 03:02:28] INFO: ######################################################################
+GPU: NVIDIA A10
+[2026-07-10 03:02:28] INFO: Device: cuda
+[2026-07-10 03:02:28] INFO: Loading datasets...
+
+Writers split (seed=42):
+  Train: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  Val: [13, 14, 15, 16]
+  Test: [17, 18, 19, 20]
+
+Alphabet split:
+  Train: 28 alphabets (no Braille/Balinese)
+  Val: 10 alphabets (no Braille/Balinese)
+  Test: 10 alphabets (user specified)
+  Loaded from cache: background_[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]_880_30
+  Loaded from cache: background_[13, 14, 15, 16]_284_15
+  Loaded from cache: evaluation_[17, 18, 19, 20]_409_15
+
+Dataset sizes:
+  Train: 52800 triplets
+  Val: 8520 triplets
+  Test: 12270 triplets
+  Total: 73590 triplets
+[2026-07-10 03:02:30] INFO: Data loading completed in 1s
+Test alphabets: 7
+[2026-07-10 03:02:30] INFO: Training started | Epochs: 10 | Margin: 0.5
+[2026-07-10 03:02:30] INFO: Epoch 1/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 50.00%
+
+Result: 50.00% (50/100)
+Time: 0s
+[2026-07-10 03:03:30] INFO: Train Loss: 0.3023 | Val Acc: 74.26% | Test Acc: 50.00% | Time: 1m 0s
+[2026-07-10 03:03:30] INFO: Epoch 2/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 54.00%
+
+Result: 54.00% (54/100)
+Time: 0s
+[2026-07-10 03:04:31] INFO: Train Loss: 0.2717 | Val Acc: 73.72% | Test Acc: 54.00% | Time: 1m 0s
+[2026-07-10 03:04:31] INFO: Epoch 3/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 54.00%
+
+Result: 54.00% (54/100)
+Time: 0s
+[2026-07-10 03:05:31] INFO: Train Loss: 0.2601 | Val Acc: 74.23% | Test Acc: 54.00% | Time: 1m 0s
+[2026-07-10 03:05:31] INFO: Epoch 4/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 53.00%
+
+Result: 53.00% (53/100)
+Time: 0s
+[2026-07-10 03:06:32] INFO: Train Loss: 0.2403 | Val Acc: 73.63% | Test Acc: 53.00% | Time: 1m 0s
+[2026-07-10 03:06:32] INFO: Epoch 5/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 45.00%
+
+Result: 45.00% (45/100)
+Time: 0s
+[2026-07-10 03:07:32] INFO: Train Loss: 0.2246 | Val Acc: 74.39% | Test Acc: 45.00% | Time: 1m 0s
+[2026-07-10 03:07:32] INFO: Epoch 6/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 54.00%
+
+Result: 54.00% (54/100)
+Time: 0s
+[2026-07-10 03:08:32] INFO: Train Loss: 0.2111 | Val Acc: 74.89% | Test Acc: 54.00% | Time: 1m 0s
+[2026-07-10 03:08:32] INFO: Epoch 7/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 63.00%
+
+Result: 63.00% (63/100)
+Time: 0s
+[2026-07-10 03:09:33] INFO: Train Loss: 0.2027 | Val Acc: 74.32% | Test Acc: 63.00% | Time: 1m 0s
+[2026-07-10 03:09:33] INFO: Epoch 8/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 71.00%
+
+Result: 71.00% (71/100)
+Time: 0s
+[2026-07-10 03:10:33] INFO: Train Loss: 0.1909 | Val Acc: 74.28% | Test Acc: 71.00% | Time: 1m 0s
+[2026-07-10 03:10:33] INFO: Epoch 9/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 69.00%
+
+Result: 69.00% (69/100)
+Time: 0s
+[2026-07-10 03:11:34] INFO: Train Loss: 0.1811 | Val Acc: 74.05% | Test Acc: 69.00% | Time: 1m 0s
+[2026-07-10 03:11:34] INFO: Epoch 10/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 61.00%
+
+Result: 61.00% (61/100)
+Time: 0s
+[2026-07-10 03:12:34] INFO: Train Loss: 0.1753 | Val Acc: 74.41% | Test Acc: 61.00% | Time: 1m 0s
+[2026-07-10 03:12:34] INFO: Experiment completed in 10m 4s
+[2026-07-10 03:12:34] INFO: 
+Result for margin=0.5:
+[2026-07-10 03:12:34] INFO:   Best Test Acc: 71.00%
+[2026-07-10 03:12:34] INFO:   Final Val Acc: 74.41%
+[2026-07-10 03:12:34] INFO:   Epochs: 10
+[2026-07-10 03:12:34] INFO:   Time: 10m 4s
+[2026-07-10 03:12:34] INFO: 
+######################################################################
+[2026-07-10 03:12:34] INFO: # Experiment 3/5: margin = 1.0
+[2026-07-10 03:12:34] INFO: ######################################################################
+GPU: NVIDIA A10
+[2026-07-10 03:12:34] INFO: Device: cuda
+[2026-07-10 03:12:34] INFO: Loading datasets...
+
+Writers split (seed=42):
+  Train: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  Val: [13, 14, 15, 16]
+  Test: [17, 18, 19, 20]
+
+Alphabet split:
+  Train: 28 alphabets (no Braille/Balinese)
+  Val: 10 alphabets (no Braille/Balinese)
+  Test: 10 alphabets (user specified)
+  Loaded from cache: background_[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]_880_30
+  Loaded from cache: background_[13, 14, 15, 16]_284_15
+  Loaded from cache: evaluation_[17, 18, 19, 20]_409_15
+
+Dataset sizes:
+  Train: 52800 triplets
+  Val: 8520 triplets
+  Test: 12270 triplets
+  Total: 73590 triplets
+[2026-07-10 03:12:35] INFO: Data loading completed in 1s
+Test alphabets: 7
+[2026-07-10 03:12:36] INFO: Training started | Epochs: 10 | Margin: 1.0
+[2026-07-10 03:12:36] INFO: Epoch 1/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 40.00%
+
+Result: 40.00% (40/100)
+Time: 0s
+[2026-07-10 03:13:36] INFO: Train Loss: 0.6731 | Val Acc: 73.10% | Test Acc: 40.00% | Time: 1m 0s
+[2026-07-10 03:13:36] INFO: Epoch 2/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 47.00%
+
+Result: 47.00% (47/100)
+Time: 0s
+[2026-07-10 03:14:36] INFO: Train Loss: 0.6100 | Val Acc: 73.65% | Test Acc: 47.00% | Time: 1m 0s
+[2026-07-10 03:14:36] INFO: Epoch 3/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 59.00%
+
+Result: 59.00% (59/100)
+Time: 0s
+[2026-07-10 03:15:37] INFO: Train Loss: 0.5856 | Val Acc: 73.83% | Test Acc: 59.00% | Time: 1m 0s
+[2026-07-10 03:15:37] INFO: Epoch 4/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 49.00%
+
+Result: 49.00% (49/100)
+Time: 0s
+[2026-07-10 03:16:37] INFO: Train Loss: 0.5672 | Val Acc: 74.08% | Test Acc: 49.00% | Time: 1m 0s
+[2026-07-10 03:16:37] INFO: Epoch 5/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 53.00%
+
+Result: 53.00% (53/100)
+Time: 0s
+[2026-07-10 03:17:38] INFO: Train Loss: 0.5516 | Val Acc: 74.25% | Test Acc: 53.00% | Time: 1m 0s
+[2026-07-10 03:17:38] INFO: Epoch 6/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 56.00%
+
+Result: 56.00% (56/100)
+Time: 0s
+[2026-07-10 03:18:38] INFO: Train Loss: 0.5366 | Val Acc: 74.04% | Test Acc: 56.00% | Time: 1m 0s
+[2026-07-10 03:18:38] INFO: Epoch 7/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 57.00%
+
+Result: 57.00% (57/100)
+Time: 0s
+[2026-07-10 03:19:39] INFO: Train Loss: 0.5224 | Val Acc: 73.74% | Test Acc: 57.00% | Time: 1m 0s
+[2026-07-10 03:19:39] INFO: Epoch 8/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 52.00%
+
+Result: 52.00% (52/100)
+Time: 0s
+[2026-07-10 03:20:39] INFO: Train Loss: 0.5061 | Val Acc: 73.93% | Test Acc: 52.00% | Time: 1m 0s
+[2026-07-10 03:20:39] INFO: Epoch 9/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 68.00%
+
+Result: 68.00% (68/100)
+Time: 0s
+[2026-07-10 03:21:39] INFO: Train Loss: 0.4913 | Val Acc: 74.14% | Test Acc: 68.00% | Time: 1m 0s
+[2026-07-10 03:21:39] INFO: Epoch 10/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 56.00%
+
+Result: 56.00% (56/100)
+Time: 0s
+[2026-07-10 03:22:40] INFO: Train Loss: 0.4826 | Val Acc: 73.58% | Test Acc: 56.00% | Time: 1m 0s
+[2026-07-10 03:22:40] INFO: Experiment completed in 10m 4s
+[2026-07-10 03:22:40] INFO: 
+Result for margin=1.0:
+[2026-07-10 03:22:40] INFO:   Best Test Acc: 68.00%
+[2026-07-10 03:22:40] INFO:   Final Val Acc: 73.58%
+[2026-07-10 03:22:40] INFO:   Epochs: 10
+[2026-07-10 03:22:40] INFO:   Time: 10m 4s
+[2026-07-10 03:22:40] INFO: 
+######################################################################
+[2026-07-10 03:22:40] INFO: # Experiment 4/5: margin = 1.5
+[2026-07-10 03:22:40] INFO: ######################################################################
+GPU: NVIDIA A10
+[2026-07-10 03:22:40] INFO: Device: cuda
+[2026-07-10 03:22:40] INFO: Loading datasets...
+
+Writers split (seed=42):
+  Train: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  Val: [13, 14, 15, 16]
+  Test: [17, 18, 19, 20]
+
+Alphabet split:
+  Train: 28 alphabets (no Braille/Balinese)
+  Val: 10 alphabets (no Braille/Balinese)
+  Test: 10 alphabets (user specified)
+  Loaded from cache: background_[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]_880_30
+  Loaded from cache: background_[13, 14, 15, 16]_284_15
+  Loaded from cache: evaluation_[17, 18, 19, 20]_409_15
+
+Dataset sizes:
+  Train: 52800 triplets
+  Val: 8520 triplets
+  Test: 12270 triplets
+  Total: 73590 triplets
+[2026-07-10 03:22:41] INFO: Data loading completed in 1s
+Test alphabets: 7
+[2026-07-10 03:22:41] INFO: Training started | Epochs: 10 | Margin: 1.5
+[2026-07-10 03:22:41] INFO: Epoch 1/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 30.00%
+
+Result: 30.00% (30/100)
+Time: 0s
+[2026-07-10 03:23:42] INFO: Train Loss: 1.1241 | Val Acc: 71.56% | Test Acc: 30.00% | Time: 1m 0s
+[2026-07-10 03:23:42] INFO: Epoch 2/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 40.00%
+
+Result: 40.00% (40/100)
+Time: 0s
+[2026-07-10 03:24:42] INFO: Train Loss: 1.0461 | Val Acc: 72.14% | Test Acc: 40.00% | Time: 1m 0s
+[2026-07-10 03:24:42] INFO: Epoch 3/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 38.00%
+
+Result: 38.00% (38/100)
+Time: 0s
+[2026-07-10 03:25:43] INFO: Train Loss: 1.0148 | Val Acc: 71.50% | Test Acc: 38.00% | Time: 1m 0s
+[2026-07-10 03:25:43] INFO: Epoch 4/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 35.00%
+
+Result: 35.00% (35/100)
+Time: 0s
+[2026-07-10 03:26:43] INFO: Train Loss: 0.9945 | Val Acc: 72.44% | Test Acc: 35.00% | Time: 1m 0s
+[2026-07-10 03:26:43] INFO: Epoch 5/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 35.00%
+
+Result: 35.00% (35/100)
+Time: 0s
+[2026-07-10 03:27:44] INFO: Train Loss: 0.9771 | Val Acc: 71.80% | Test Acc: 35.00% | Time: 1m 0s
+[2026-07-10 03:27:44] INFO: Epoch 6/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 40.00%
+
+Result: 40.00% (40/100)
+Time: 0s
+[2026-07-10 03:28:44] INFO: Train Loss: 0.9625 | Val Acc: 72.16% | Test Acc: 40.00% | Time: 1m 0s
+[2026-07-10 03:28:44] INFO: Epoch 7/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 43.00%
+
+Result: 43.00% (43/100)
+Time: 0s
+[2026-07-10 03:29:44] INFO: Train Loss: 0.9513 | Val Acc: 71.74% | Test Acc: 43.00% | Time: 1m 0s
+[2026-07-10 03:29:44] INFO: Epoch 8/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 41.00%
+
+Result: 41.00% (41/100)
+Time: 0s
+[2026-07-10 03:30:45] INFO: Train Loss: 0.9401 | Val Acc: 72.32% | Test Acc: 41.00% | Time: 1m 0s
+[2026-07-10 03:30:45] INFO: Epoch 9/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 37.00%
+
+Result: 37.00% (37/100)
+Time: 0s
+[2026-07-10 03:31:45] INFO: Train Loss: 0.9312 | Val Acc: 71.98% | Test Acc: 37.00% | Time: 1m 0s
+[2026-07-10 03:31:45] INFO: Epoch 10/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 37.00%
+
+Result: 37.00% (37/100)
+Time: 0s
+[2026-07-10 03:32:46] INFO: Train Loss: 0.9095 | Val Acc: 71.40% | Test Acc: 37.00% | Time: 1m 0s
+[2026-07-10 03:32:46] INFO: Experiment completed in 10m 4s
+[2026-07-10 03:32:46] INFO: 
+Result for margin=1.5:
+[2026-07-10 03:32:46] INFO:   Best Test Acc: 43.00%
+[2026-07-10 03:32:46] INFO:   Final Val Acc: 71.40%
+[2026-07-10 03:32:46] INFO:   Epochs: 10
+[2026-07-10 03:32:46] INFO:   Time: 10m 4s
+[2026-07-10 03:32:46] INFO: 
+######################################################################
+[2026-07-10 03:32:46] INFO: # Experiment 5/5: margin = 2.0
+[2026-07-10 03:32:46] INFO: ######################################################################
+GPU: NVIDIA A10
+[2026-07-10 03:32:46] INFO: Device: cuda
+[2026-07-10 03:32:46] INFO: Loading datasets...
+
+Writers split (seed=42):
+  Train: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  Val: [13, 14, 15, 16]
+  Test: [17, 18, 19, 20]
+
+Alphabet split:
+  Train: 28 alphabets (no Braille/Balinese)
+  Val: 10 alphabets (no Braille/Balinese)
+  Test: 10 alphabets (user specified)
+  Loaded from cache: background_[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]_880_30
+  Loaded from cache: background_[13, 14, 15, 16]_284_15
+  Loaded from cache: evaluation_[17, 18, 19, 20]_409_15
+
+Dataset sizes:
+  Train: 52800 triplets
+  Val: 8520 triplets
+  Test: 12270 triplets
+  Total: 73590 triplets
+[2026-07-10 03:32:47] INFO: Data loading completed in 1s
+Test alphabets: 7
+[2026-07-10 03:32:47] INFO: Training started | Epochs: 10 | Margin: 2.0
+[2026-07-10 03:32:47] INFO: Epoch 1/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 28.00%
+
+Result: 28.00% (28/100)
+Time: 0s
+[2026-07-10 03:33:48] INFO: Train Loss: 1.6230 | Val Acc: 69.37% | Test Acc: 28.00% | Time: 1m 0s
+[2026-07-10 03:33:48] INFO: Epoch 2/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 40.00%
+
+Result: 40.00% (40/100)
+Time: 0s
+[2026-07-10 03:34:48] INFO: Train Loss: 1.5427 | Val Acc: 70.22% | Test Acc: 40.00% | Time: 1m 0s
+[2026-07-10 03:34:48] INFO: Epoch 3/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 30.00%
+
+Result: 30.00% (30/100)
+Time: 0s
+[2026-07-10 03:35:48] INFO: Train Loss: 1.5115 | Val Acc: 70.27% | Test Acc: 30.00% | Time: 1m 0s
+[2026-07-10 03:35:48] INFO: Epoch 4/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 23.00%
+
+Result: 23.00% (23/100)
+Time: 0s
+[2026-07-10 03:36:49] INFO: Train Loss: 1.4927 | Val Acc: 70.62% | Test Acc: 23.00% | Time: 1m 0s
+[2026-07-10 03:36:49] INFO: Epoch 5/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 25.00%
+
+Result: 25.00% (25/100)
+Time: 0s
+[2026-07-10 03:37:49] INFO: Train Loss: 1.4770 | Val Acc: 71.19% | Test Acc: 25.00% | Time: 1m 0s
+[2026-07-10 03:37:49] INFO: Epoch 6/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 25.00%
+
+Result: 25.00% (25/100)
+Time: 0s
+[2026-07-10 03:38:50] INFO: Train Loss: 1.4634 | Val Acc: 71.46% | Test Acc: 25.00% | Time: 1m 0s
+[2026-07-10 03:38:50] INFO: Epoch 7/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 36.00%
+
+Result: 36.00% (36/100)
+Time: 0s
+[2026-07-10 03:39:50] INFO: Train Loss: 1.4541 | Val Acc: 70.77% | Test Acc: 36.00% | Time: 1m 0s
+[2026-07-10 03:39:50] INFO: Epoch 8/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 36.00%
+
+Result: 36.00% (36/100)
+Time: 0s
+[2026-07-10 03:40:51] INFO: Train Loss: 1.4427 | Val Acc: 71.21% | Test Acc: 36.00% | Time: 1m 0s
+[2026-07-10 03:40:51] INFO: Epoch 9/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 21.00%
+
+Result: 21.00% (21/100)
+Time: 0s
+[2026-07-10 03:41:51] INFO: Train Loss: 1.4321 | Val Acc: 71.34% | Test Acc: 21.00% | Time: 1m 0s
+[2026-07-10 03:41:51] INFO: Epoch 10/10
+
+20-way 1-shot evaluation (100 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/100, Acc: 33.00%
+
+Result: 33.00% (33/100)
+Time: 0s
+[2026-07-10 03:42:52] INFO: Train Loss: 1.4236 | Val Acc: 70.38% | Test Acc: 33.00% | Time: 1m 0s
+[2026-07-10 03:42:52] INFO: Experiment completed in 10m 4s
+[2026-07-10 03:42:52] INFO: 
+Result for margin=2.0:
+[2026-07-10 03:42:52] INFO:   Best Test Acc: 40.00%
+[2026-07-10 03:42:52] INFO:   Final Val Acc: 70.38%
+[2026-07-10 03:42:52] INFO:   Epochs: 10
+[2026-07-10 03:42:52] INFO:   Time: 10m 4s
+
+Results saved to: ./ablation_margin_results.csv
+Plot saved to: ./ablation_margin_comparison.png
+[2026-07-10 03:42:52] INFO: 
+======================================================================
+[2026-07-10 03:42:52] INFO: Ablation Study Complete!
+[2026-07-10 03:42:52] INFO: ======================================================================
+[2026-07-10 03:42:52] INFO: Total Experiment Time: 50m 25s
+[2026-07-10 03:42:52] INFO: 
+======================================================================
+[2026-07-10 03:42:52] INFO: SUMMARY TABLE
+[2026-07-10 03:42:52] INFO: ======================================================================
+[2026-07-10 03:42:52] INFO: Margin     Best Test Acc   Final Val Acc   Epochs     Time           
+[2026-07-10 03:42:52] INFO: ----------------------------------------------------------------------
+[2026-07-10 03:42:52] INFO: 0.2        67.00%          74.11%          10         10m 0s         
+[2026-07-10 03:42:52] INFO: 0.5        71.00%          74.41%          10         10m 4s         
+[2026-07-10 03:42:52] INFO: 1.0        68.00%          73.58%          10         10m 4s         
+[2026-07-10 03:42:52] INFO: 1.5        43.00%          71.40%          10         10m 4s         
+[2026-07-10 03:42:52] INFO: 2.0        40.00%          70.38%          10         10m 4s         
+[2026-07-10 03:42:52] INFO: ----------------------------------------------------------------------
+[2026-07-10 03:42:52] INFO: 
+Best margin: 0.5 (Test Acc: 71.00%)
