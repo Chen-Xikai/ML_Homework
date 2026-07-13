@@ -1,0 +1,15 @@
+﻿python : C:\Users\ASUS\Desktop\任务三\continue_ablation.py:136: FutureWarning: You are using `torch.load` with `weights_on
+ly=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct mal
+icious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/mai
+n/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be fli
+pped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be
+ allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_saf
+e_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of th
+e loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+所在位置 行:1 字符: 33
++ ... "C:\Users\ASUS\Desktop\任务三"; python continue_ablation.py 2>&1 | Out-F ...
++                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\ASUS\D...mental feature.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  ck = torch.load(model_path, map_location='cpu')
