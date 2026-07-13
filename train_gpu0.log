@@ -1,0 +1,790 @@
+[2026-07-10 02:52:26] INFO: Config: {'root_dir': '/root/triplet_deploy/data', 'embedding_dim': 128, 'margin': 0.5, 'batch_size': 32, 'triplets_per_class': 30, 'learning_rate': 0.0001, 'num_epochs': 100, 'save_dir': './checkpoints'}
+[2026-07-10 02:52:26] INFO: Log file: ./logs/train_20260710_025226.log
+GPU: NVIDIA A10
+[2026-07-10 02:52:26] INFO: Device: cuda
+[2026-07-10 02:52:26] INFO: Loading datasets...
+
+Writers split (seed=42):
+  Train: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  Val: [13, 14, 15, 16]
+  Test: [17, 18, 19, 20]
+
+Alphabet split:
+  Train: 28 alphabets (no Braille/Balinese)
+  Val: 10 alphabets (no Braille/Balinese)
+  Test: 10 alphabets (user specified)
+  Loaded from cache: background_[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]_880_30
+  Loaded from cache: background_[13, 14, 15, 16]_284_15
+  Loaded from cache: evaluation_[17, 18, 19, 20]_409_15
+
+Dataset sizes:
+  Train: 52800 triplets
+  Val: 8520 triplets
+  Test: 12270 triplets
+  Total: 73590 triplets
+[2026-07-10 02:52:27] INFO: Data loading completed in 1s
+Test alphabets: 7
+[2026-07-10 02:52:28] INFO: Training started | Epochs: 100 | Margin: 0.5
+[2026-07-10 02:52:28] INFO: ============================================================
+[2026-07-10 02:52:28] INFO: Epoch 1/100
+[2026-07-10 02:52:28] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 50.00%
+  Episode 200/400, Acc: 51.50%
+  Episode 300/400, Acc: 51.67%
+  Episode 400/400, Acc: 49.25%
+
+Result: 49.25% (197/400)
+Time: 0s
+[2026-07-10 02:53:28] INFO: Train Loss: 0.3023
+[2026-07-10 02:53:28] INFO: Val Loss: 0.2890 | Val Acc: 74.26%
+[2026-07-10 02:53:28] INFO: Test Acc (20-way 1-shot): 49.25%
+[2026-07-10 02:53:28] INFO: Epoch Time: 1m 0s
+[2026-07-10 02:53:28] INFO: [Best] Test Acc: 49.25% (Saved)
+[2026-07-10 02:53:28] INFO: ============================================================
+[2026-07-10 02:53:28] INFO: Epoch 2/100
+[2026-07-10 02:53:28] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 45.00%
+  Episode 200/400, Acc: 49.00%
+  Episode 300/400, Acc: 51.67%
+  Episode 400/400, Acc: 52.00%
+
+Result: 52.00% (208/400)
+Time: 0s
+[2026-07-10 02:54:28] INFO: Train Loss: 0.2717
+[2026-07-10 02:54:28] INFO: Val Loss: 0.2846 | Val Acc: 73.72%
+[2026-07-10 02:54:28] INFO: Test Acc (20-way 1-shot): 52.00%
+[2026-07-10 02:54:28] INFO: Epoch Time: 1m 0s
+[2026-07-10 02:54:28] INFO: [Best] Test Acc: 52.00% (Saved)
+[2026-07-10 02:54:28] INFO: ============================================================
+[2026-07-10 02:54:28] INFO: Epoch 3/100
+[2026-07-10 02:54:28] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 54.00%
+  Episode 200/400, Acc: 54.00%
+  Episode 300/400, Acc: 53.33%
+  Episode 400/400, Acc: 51.50%
+
+Result: 51.50% (206/400)
+Time: 0s
+[2026-07-10 02:55:28] INFO: Train Loss: 0.2601
+[2026-07-10 02:55:28] INFO: Val Loss: 0.2796 | Val Acc: 74.23%
+[2026-07-10 02:55:28] INFO: Test Acc (20-way 1-shot): 51.50%
+[2026-07-10 02:55:28] INFO: Epoch Time: 1m 0s
+[2026-07-10 02:55:28] INFO: ============================================================
+[2026-07-10 02:55:28] INFO: Epoch 4/100
+[2026-07-10 02:55:28] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 58.00%
+  Episode 200/400, Acc: 57.00%
+  Episode 300/400, Acc: 59.33%
+  Episode 400/400, Acc: 57.50%
+
+Result: 57.50% (230/400)
+Time: 0s
+[2026-07-10 02:56:28] INFO: Train Loss: 0.2403
+[2026-07-10 02:56:28] INFO: Val Loss: 0.2814 | Val Acc: 73.63%
+[2026-07-10 02:56:28] INFO: Test Acc (20-way 1-shot): 57.50%
+[2026-07-10 02:56:28] INFO: Epoch Time: 1m 0s
+[2026-07-10 02:56:29] INFO: [Best] Test Acc: 57.50% (Saved)
+[2026-07-10 02:56:29] INFO: ============================================================
+[2026-07-10 02:56:29] INFO: Epoch 5/100
+[2026-07-10 02:56:29] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 65.00%
+  Episode 200/400, Acc: 61.00%
+  Episode 300/400, Acc: 61.00%
+  Episode 400/400, Acc: 60.25%
+
+Result: 60.25% (241/400)
+Time: 0s
+[2026-07-10 02:57:29] INFO: Train Loss: 0.2246
+[2026-07-10 02:57:29] INFO: Val Loss: 0.2872 | Val Acc: 74.39%
+[2026-07-10 02:57:29] INFO: Test Acc (20-way 1-shot): 60.25%
+[2026-07-10 02:57:29] INFO: Epoch Time: 1m 0s
+[2026-07-10 02:57:29] INFO: [Best] Test Acc: 60.25% (Saved)
+[2026-07-10 02:57:29] INFO: ============================================================
+[2026-07-10 02:57:29] INFO: Epoch 6/100
+[2026-07-10 02:57:29] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 67.00%
+  Episode 200/400, Acc: 66.50%
+  Episode 300/400, Acc: 65.00%
+  Episode 400/400, Acc: 65.25%
+
+Result: 65.25% (261/400)
+Time: 0s
+[2026-07-10 02:58:29] INFO: Train Loss: 0.2111
+[2026-07-10 02:58:29] INFO: Val Loss: 0.2726 | Val Acc: 74.89%
+[2026-07-10 02:58:29] INFO: Test Acc (20-way 1-shot): 65.25%
+[2026-07-10 02:58:29] INFO: Epoch Time: 1m 0s
+[2026-07-10 02:58:29] INFO: [Best] Test Acc: 65.25% (Saved)
+[2026-07-10 02:58:29] INFO: ============================================================
+[2026-07-10 02:58:29] INFO: Epoch 7/100
+[2026-07-10 02:58:29] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 55.00%
+  Episode 200/400, Acc: 60.50%
+  Episode 300/400, Acc: 60.00%
+  Episode 400/400, Acc: 63.75%
+
+Result: 63.75% (255/400)
+Time: 0s
+[2026-07-10 02:59:29] INFO: Train Loss: 0.2027
+[2026-07-10 02:59:29] INFO: Val Loss: 0.2685 | Val Acc: 74.32%
+[2026-07-10 02:59:29] INFO: Test Acc (20-way 1-shot): 63.75%
+[2026-07-10 02:59:29] INFO: Epoch Time: 1m 0s
+[2026-07-10 02:59:29] INFO: ============================================================
+[2026-07-10 02:59:29] INFO: Epoch 8/100
+[2026-07-10 02:59:29] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 66.00%
+  Episode 200/400, Acc: 68.50%
+  Episode 300/400, Acc: 66.67%
+  Episode 400/400, Acc: 67.50%
+
+Result: 67.50% (270/400)
+Time: 0s
+[2026-07-10 03:00:29] INFO: Train Loss: 0.1909
+[2026-07-10 03:00:29] INFO: Val Loss: 0.2693 | Val Acc: 74.28%
+[2026-07-10 03:00:29] INFO: Test Acc (20-way 1-shot): 67.50%
+[2026-07-10 03:00:29] INFO: Epoch Time: 1m 0s
+[2026-07-10 03:00:29] INFO: [Best] Test Acc: 67.50% (Saved)
+[2026-07-10 03:00:29] INFO: ============================================================
+[2026-07-10 03:00:29] INFO: Epoch 9/100
+[2026-07-10 03:00:29] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 67.00%
+  Episode 200/400, Acc: 62.00%
+  Episode 300/400, Acc: 59.33%
+  Episode 400/400, Acc: 62.25%
+
+Result: 62.25% (249/400)
+Time: 0s
+[2026-07-10 03:01:29] INFO: Train Loss: 0.1811
+[2026-07-10 03:01:29] INFO: Val Loss: 0.2678 | Val Acc: 74.05%
+[2026-07-10 03:01:29] INFO: Test Acc (20-way 1-shot): 62.25%
+[2026-07-10 03:01:29] INFO: Epoch Time: 1m 0s
+[2026-07-10 03:01:29] INFO: ============================================================
+[2026-07-10 03:01:29] INFO: Epoch 10/100
+[2026-07-10 03:01:29] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 68.00%
+  Episode 200/400, Acc: 65.00%
+  Episode 300/400, Acc: 63.00%
+  Episode 400/400, Acc: 62.75%
+
+Result: 62.75% (251/400)
+Time: 0s
+[2026-07-10 03:02:29] INFO: Train Loss: 0.1753
+[2026-07-10 03:02:29] INFO: Val Loss: 0.2731 | Val Acc: 74.41%
+[2026-07-10 03:02:29] INFO: Test Acc (20-way 1-shot): 62.75%
+[2026-07-10 03:02:29] INFO: Epoch Time: 1m 0s
+[2026-07-10 03:02:29] INFO: ============================================================
+[2026-07-10 03:02:29] INFO: Epoch 11/100
+[2026-07-10 03:02:29] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 70.00%
+  Episode 200/400, Acc: 71.00%
+  Episode 300/400, Acc: 67.33%
+  Episode 400/400, Acc: 68.00%
+
+Result: 68.00% (272/400)
+Time: 0s
+[2026-07-10 03:03:29] INFO: Train Loss: 0.1719
+[2026-07-10 03:03:29] INFO: Val Loss: 0.2715 | Val Acc: 74.53%
+[2026-07-10 03:03:29] INFO: Test Acc (20-way 1-shot): 68.00%
+[2026-07-10 03:03:29] INFO: Epoch Time: 1m 0s
+[2026-07-10 03:03:29] INFO: [Best] Test Acc: 68.00% (Saved)
+[2026-07-10 03:03:29] INFO: ============================================================
+[2026-07-10 03:03:29] INFO: Epoch 12/100
+[2026-07-10 03:03:29] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 62.00%
+  Episode 200/400, Acc: 63.50%
+  Episode 300/400, Acc: 64.00%
+  Episode 400/400, Acc: 61.50%
+
+Result: 61.50% (246/400)
+Time: 0s
+[2026-07-10 03:04:30] INFO: Train Loss: 0.1684
+[2026-07-10 03:04:30] INFO: Val Loss: 0.2705 | Val Acc: 74.25%
+[2026-07-10 03:04:30] INFO: Test Acc (20-way 1-shot): 61.50%
+[2026-07-10 03:04:30] INFO: Epoch Time: 1m 0s
+[2026-07-10 03:04:30] INFO: ============================================================
+[2026-07-10 03:04:30] INFO: Epoch 13/100
+[2026-07-10 03:04:30] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 57.00%
+  Episode 200/400, Acc: 60.00%
+  Episode 300/400, Acc: 61.67%
+  Episode 400/400, Acc: 61.75%
+
+Result: 61.75% (247/400)
+Time: 0s
+[2026-07-10 03:05:30] INFO: Train Loss: 0.1641
+[2026-07-10 03:05:30] INFO: Val Loss: 0.2704 | Val Acc: 74.64%
+[2026-07-10 03:05:30] INFO: Test Acc (20-way 1-shot): 61.75%
+[2026-07-10 03:05:30] INFO: Epoch Time: 1m 0s
+[2026-07-10 03:05:30] INFO: ============================================================
+[2026-07-10 03:05:30] INFO: Epoch 14/100
+[2026-07-10 03:05:30] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 60.00%
+  Episode 200/400, Acc: 65.50%
+  Episode 300/400, Acc: 67.67%
+  Episode 400/400, Acc: 66.00%
+
+Result: 66.00% (264/400)
+Time: 0s
+[2026-07-10 03:06:30] INFO: Train Loss: 0.1468
+[2026-07-10 03:06:30] INFO: Val Loss: 0.2716 | Val Acc: 74.27%
+[2026-07-10 03:06:30] INFO: Test Acc (20-way 1-shot): 66.00%
+[2026-07-10 03:06:30] INFO: Epoch Time: 1m 0s
+[2026-07-10 03:06:30] INFO: ============================================================
+[2026-07-10 03:06:30] INFO: Epoch 15/100
+[2026-07-10 03:06:30] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 66.00%
+  Episode 200/400, Acc: 69.50%
+  Episode 300/400, Acc: 69.33%
+  Episode 400/400, Acc: 69.75%
+
+Result: 69.75% (279/400)
+Time: 0s
+[2026-07-10 03:07:30] INFO: Train Loss: 0.1461
+[2026-07-10 03:07:30] INFO: Val Loss: 0.2679 | Val Acc: 74.42%
+[2026-07-10 03:07:30] INFO: Test Acc (20-way 1-shot): 69.75%
+[2026-07-10 03:07:30] INFO: Epoch Time: 1m 0s
+[2026-07-10 03:07:30] INFO: [Best] Test Acc: 69.75% (Saved)
+[2026-07-10 03:07:30] INFO: ============================================================
+[2026-07-10 03:07:30] INFO: Epoch 16/100
+[2026-07-10 03:07:30] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 58.00%
+  Episode 200/400, Acc: 62.00%
+  Episode 300/400, Acc: 63.33%
+  Episode 400/400, Acc: 62.50%
+
+Result: 62.50% (250/400)
+Time: 0s
+[2026-07-10 03:08:30] INFO: Train Loss: 0.1443
+[2026-07-10 03:08:30] INFO: Val Loss: 0.2743 | Val Acc: 73.87%
+[2026-07-10 03:08:30] INFO: Test Acc (20-way 1-shot): 62.50%
+[2026-07-10 03:08:30] INFO: Epoch Time: 1m 0s
+[2026-07-10 03:08:30] INFO: ============================================================
+[2026-07-10 03:08:30] INFO: Epoch 17/100
+[2026-07-10 03:08:30] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 64.00%
+  Episode 200/400, Acc: 66.50%
+  Episode 300/400, Acc: 69.33%
+  Episode 400/400, Acc: 68.50%
+
+Result: 68.50% (274/400)
+Time: 0s
+[2026-07-10 03:09:30] INFO: Train Loss: 0.1392
+[2026-07-10 03:09:30] INFO: Val Loss: 0.2779 | Val Acc: 74.18%
+[2026-07-10 03:09:30] INFO: Test Acc (20-way 1-shot): 68.50%
+[2026-07-10 03:09:30] INFO: Epoch Time: 1m 0s
+[2026-07-10 03:09:30] INFO: ============================================================
+[2026-07-10 03:09:30] INFO: Epoch 18/100
+[2026-07-10 03:09:30] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 65.00%
+  Episode 200/400, Acc: 66.00%
+  Episode 300/400, Acc: 67.00%
+  Episode 400/400, Acc: 67.25%
+
+Result: 67.25% (269/400)
+Time: 0s
+[2026-07-10 03:10:30] INFO: Train Loss: 0.1339
+[2026-07-10 03:10:30] INFO: Val Loss: 0.2671 | Val Acc: 73.81%
+[2026-07-10 03:10:30] INFO: Test Acc (20-way 1-shot): 67.25%
+[2026-07-10 03:10:30] INFO: Epoch Time: 59s
+[2026-07-10 03:10:30] INFO: ============================================================
+[2026-07-10 03:10:30] INFO: Epoch 19/100
+[2026-07-10 03:10:30] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 68.00%
+  Episode 200/400, Acc: 69.00%
+  Episode 300/400, Acc: 66.00%
+  Episode 400/400, Acc: 64.75%
+
+Result: 64.75% (259/400)
+Time: 0s
+[2026-07-10 03:11:30] INFO: Train Loss: 0.1309
+[2026-07-10 03:11:30] INFO: Val Loss: 0.2697 | Val Acc: 74.01%
+[2026-07-10 03:11:30] INFO: Test Acc (20-way 1-shot): 64.75%
+[2026-07-10 03:11:30] INFO: Epoch Time: 1m 0s
+[2026-07-10 03:11:30] INFO: ============================================================
+[2026-07-10 03:11:30] INFO: Epoch 20/100
+[2026-07-10 03:11:30] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 60.00%
+  Episode 200/400, Acc: 62.50%
+  Episode 300/400, Acc: 65.67%
+  Episode 400/400, Acc: 64.00%
+
+Result: 64.00% (256/400)
+Time: 0s
+[2026-07-10 03:12:30] INFO: Train Loss: 0.1320
+[2026-07-10 03:12:30] INFO: Val Loss: 0.2669 | Val Acc: 73.88%
+[2026-07-10 03:12:30] INFO: Test Acc (20-way 1-shot): 64.00%
+[2026-07-10 03:12:30] INFO: Epoch Time: 59s
+[2026-07-10 03:12:30] INFO: ============================================================
+[2026-07-10 03:12:30] INFO: Epoch 21/100
+[2026-07-10 03:12:30] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 64.00%
+  Episode 200/400, Acc: 65.00%
+  Episode 300/400, Acc: 64.00%
+  Episode 400/400, Acc: 65.50%
+
+Result: 65.50% (262/400)
+Time: 0s
+[2026-07-10 03:13:30] INFO: Train Loss: 0.1219
+[2026-07-10 03:13:30] INFO: Val Loss: 0.2698 | Val Acc: 74.15%
+[2026-07-10 03:13:30] INFO: Test Acc (20-way 1-shot): 65.50%
+[2026-07-10 03:13:30] INFO: Epoch Time: 59s
+[2026-07-10 03:13:30] INFO: ============================================================
+[2026-07-10 03:13:30] INFO: Epoch 22/100
+[2026-07-10 03:13:30] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 62.00%
+  Episode 200/400, Acc: 64.50%
+  Episode 300/400, Acc: 63.00%
+  Episode 400/400, Acc: 64.75%
+
+Result: 64.75% (259/400)
+Time: 0s
+[2026-07-10 03:14:30] INFO: Train Loss: 0.1283
+[2026-07-10 03:14:30] INFO: Val Loss: 0.2696 | Val Acc: 74.07%
+[2026-07-10 03:14:30] INFO: Test Acc (20-way 1-shot): 64.75%
+[2026-07-10 03:14:30] INFO: Epoch Time: 59s
+[2026-07-10 03:14:30] INFO: ============================================================
+[2026-07-10 03:14:30] INFO: Epoch 23/100
+[2026-07-10 03:14:30] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 78.00%
+  Episode 200/400, Acc: 72.00%
+  Episode 300/400, Acc: 72.00%
+  Episode 400/400, Acc: 71.25%
+
+Result: 71.25% (285/400)
+Time: 0s
+[2026-07-10 03:15:30] INFO: Train Loss: 0.1251
+[2026-07-10 03:15:30] INFO: Val Loss: 0.2718 | Val Acc: 73.66%
+[2026-07-10 03:15:30] INFO: Test Acc (20-way 1-shot): 71.25%
+[2026-07-10 03:15:30] INFO: Epoch Time: 59s
+[2026-07-10 03:15:30] INFO: [Best] Test Acc: 71.25% (Saved)
+[2026-07-10 03:15:30] INFO: ============================================================
+[2026-07-10 03:15:30] INFO: Epoch 24/100
+[2026-07-10 03:15:30] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 61.00%
+  Episode 200/400, Acc: 63.50%
+  Episode 300/400, Acc: 64.33%
+  Episode 400/400, Acc: 64.25%
+
+Result: 64.25% (257/400)
+Time: 0s
+[2026-07-10 03:16:30] INFO: Train Loss: 0.1221
+[2026-07-10 03:16:30] INFO: Val Loss: 0.2702 | Val Acc: 73.71%
+[2026-07-10 03:16:30] INFO: Test Acc (20-way 1-shot): 64.25%
+[2026-07-10 03:16:30] INFO: Epoch Time: 1m 0s
+[2026-07-10 03:16:30] INFO: ============================================================
+[2026-07-10 03:16:30] INFO: Epoch 25/100
+[2026-07-10 03:16:30] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 68.00%
+  Episode 200/400, Acc: 67.00%
+  Episode 300/400, Acc: 65.00%
+  Episode 400/400, Acc: 66.75%
+
+Result: 66.75% (267/400)
+Time: 0s
+[2026-07-10 03:17:30] INFO: Train Loss: 0.1169
+[2026-07-10 03:17:30] INFO: Val Loss: 0.2695 | Val Acc: 73.87%
+[2026-07-10 03:17:30] INFO: Test Acc (20-way 1-shot): 66.75%
+[2026-07-10 03:17:30] INFO: Epoch Time: 1m 0s
+[2026-07-10 03:17:30] INFO: ============================================================
+[2026-07-10 03:17:30] INFO: Epoch 26/100
+[2026-07-10 03:17:30] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 67.00%
+  Episode 200/400, Acc: 66.00%
+  Episode 300/400, Acc: 67.67%
+  Episode 400/400, Acc: 66.00%
+
+Result: 66.00% (264/400)
+Time: 0s
+[2026-07-10 03:18:30] INFO: Train Loss: 0.1142
+[2026-07-10 03:18:30] INFO: Val Loss: 0.2737 | Val Acc: 74.04%
+[2026-07-10 03:18:30] INFO: Test Acc (20-way 1-shot): 66.00%
+[2026-07-10 03:18:30] INFO: Epoch Time: 59s
+[2026-07-10 03:18:30] INFO: ============================================================
+[2026-07-10 03:18:30] INFO: Epoch 27/100
+[2026-07-10 03:18:30] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 67.00%
+  Episode 200/400, Acc: 60.50%
+  Episode 300/400, Acc: 61.33%
+  Episode 400/400, Acc: 62.75%
+
+Result: 62.75% (251/400)
+Time: 0s
+[2026-07-10 03:19:30] INFO: Train Loss: 0.1185
+[2026-07-10 03:19:30] INFO: Val Loss: 0.2705 | Val Acc: 73.94%
+[2026-07-10 03:19:30] INFO: Test Acc (20-way 1-shot): 62.75%
+[2026-07-10 03:19:30] INFO: Epoch Time: 1m 0s
+[2026-07-10 03:19:30] INFO: ============================================================
+[2026-07-10 03:19:30] INFO: Epoch 28/100
+[2026-07-10 03:19:30] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 64.00%
+  Episode 200/400, Acc: 63.50%
+  Episode 300/400, Acc: 65.00%
+  Episode 400/400, Acc: 65.25%
+
+Result: 65.25% (261/400)
+Time: 0s
+[2026-07-10 03:20:30] INFO: Train Loss: 0.1121
+[2026-07-10 03:20:30] INFO: Val Loss: 0.2719 | Val Acc: 73.83%
+[2026-07-10 03:20:30] INFO: Test Acc (20-way 1-shot): 65.25%
+[2026-07-10 03:20:30] INFO: Epoch Time: 59s
+[2026-07-10 03:20:30] INFO: ============================================================
+[2026-07-10 03:20:30] INFO: Epoch 29/100
+[2026-07-10 03:20:30] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 54.00%
+  Episode 200/400, Acc: 58.50%
+  Episode 300/400, Acc: 61.67%
+  Episode 400/400, Acc: 60.75%
+
+Result: 60.75% (243/400)
+Time: 0s
+[2026-07-10 03:21:30] INFO: Train Loss: 0.1161
+[2026-07-10 03:21:30] INFO: Val Loss: 0.2704 | Val Acc: 73.85%
+[2026-07-10 03:21:30] INFO: Test Acc (20-way 1-shot): 60.75%
+[2026-07-10 03:21:30] INFO: Epoch Time: 59s
+[2026-07-10 03:21:30] INFO: ============================================================
+[2026-07-10 03:21:30] INFO: Epoch 30/100
+[2026-07-10 03:21:30] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 63.00%
+  Episode 200/400, Acc: 64.00%
+  Episode 300/400, Acc: 64.00%
+  Episode 400/400, Acc: 64.25%
+
+Result: 64.25% (257/400)
+Time: 0s
+[2026-07-10 03:22:30] INFO: Train Loss: 0.1143
+[2026-07-10 03:22:30] INFO: Val Loss: 0.2741 | Val Acc: 74.11%
+[2026-07-10 03:22:30] INFO: Test Acc (20-way 1-shot): 64.25%
+[2026-07-10 03:22:30] INFO: Epoch Time: 59s
+[2026-07-10 03:22:30] INFO: ============================================================
+[2026-07-10 03:22:30] INFO: Epoch 31/100
+[2026-07-10 03:22:30] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 56.00%
+  Episode 200/400, Acc: 58.50%
+  Episode 300/400, Acc: 62.67%
+  Episode 400/400, Acc: 63.00%
+
+Result: 63.00% (252/400)
+Time: 0s
+[2026-07-10 03:23:30] INFO: Train Loss: 0.1122
+[2026-07-10 03:23:30] INFO: Val Loss: 0.2701 | Val Acc: 73.73%
+[2026-07-10 03:23:30] INFO: Test Acc (20-way 1-shot): 63.00%
+[2026-07-10 03:23:30] INFO: Epoch Time: 1m 0s
+[2026-07-10 03:23:30] INFO: ============================================================
+[2026-07-10 03:23:30] INFO: Epoch 32/100
+[2026-07-10 03:23:30] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 64.00%
+  Episode 200/400, Acc: 66.50%
+  Episode 300/400, Acc: 66.00%
+  Episode 400/400, Acc: 64.00%
+
+Result: 64.00% (256/400)
+Time: 0s
+[2026-07-10 03:24:30] INFO: Train Loss: 0.1102
+[2026-07-10 03:24:30] INFO: Val Loss: 0.2726 | Val Acc: 73.42%
+[2026-07-10 03:24:30] INFO: Test Acc (20-way 1-shot): 64.00%
+[2026-07-10 03:24:30] INFO: Epoch Time: 59s
+[2026-07-10 03:24:30] INFO: ============================================================
+[2026-07-10 03:24:30] INFO: Epoch 33/100
+[2026-07-10 03:24:30] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 61.00%
+  Episode 200/400, Acc: 63.50%
+  Episode 300/400, Acc: 63.00%
+  Episode 400/400, Acc: 64.50%
+
+Result: 64.50% (258/400)
+Time: 0s
+[2026-07-10 03:25:30] INFO: Train Loss: 0.1060
+[2026-07-10 03:25:30] INFO: Val Loss: 0.2731 | Val Acc: 73.94%
+[2026-07-10 03:25:30] INFO: Test Acc (20-way 1-shot): 64.50%
+[2026-07-10 03:25:30] INFO: Epoch Time: 59s
+[2026-07-10 03:25:30] INFO: ============================================================
+[2026-07-10 03:25:30] INFO: Epoch 34/100
+[2026-07-10 03:25:30] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 69.00%
+  Episode 200/400, Acc: 64.00%
+  Episode 300/400, Acc: 64.67%
+  Episode 400/400, Acc: 64.00%
+
+Result: 64.00% (256/400)
+Time: 0s
+[2026-07-10 03:26:30] INFO: Train Loss: 0.1111
+[2026-07-10 03:26:30] INFO: Val Loss: 0.2754 | Val Acc: 73.69%
+[2026-07-10 03:26:30] INFO: Test Acc (20-way 1-shot): 64.00%
+[2026-07-10 03:26:30] INFO: Epoch Time: 59s
+[2026-07-10 03:26:30] INFO: ============================================================
+[2026-07-10 03:26:30] INFO: Epoch 35/100
+[2026-07-10 03:26:30] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 58.00%
+  Episode 200/400, Acc: 62.00%
+  Episode 300/400, Acc: 64.00%
+  Episode 400/400, Acc: 64.50%
+
+Result: 64.50% (258/400)
+Time: 0s
+[2026-07-10 03:27:30] INFO: Train Loss: 0.1033
+[2026-07-10 03:27:30] INFO: Val Loss: 0.2721 | Val Acc: 73.63%
+[2026-07-10 03:27:30] INFO: Test Acc (20-way 1-shot): 64.50%
+[2026-07-10 03:27:30] INFO: Epoch Time: 59s
+[2026-07-10 03:27:30] INFO: ============================================================
+[2026-07-10 03:27:30] INFO: Epoch 36/100
+[2026-07-10 03:27:30] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 62.00%
+  Episode 200/400, Acc: 64.00%
+  Episode 300/400, Acc: 66.00%
+  Episode 400/400, Acc: 65.25%
+
+Result: 65.25% (261/400)
+Time: 0s
+[2026-07-10 03:28:30] INFO: Train Loss: 0.1051
+[2026-07-10 03:28:30] INFO: Val Loss: 0.2714 | Val Acc: 73.71%
+[2026-07-10 03:28:30] INFO: Test Acc (20-way 1-shot): 65.25%
+[2026-07-10 03:28:30] INFO: Epoch Time: 59s
+[2026-07-10 03:28:30] INFO: ============================================================
+[2026-07-10 03:28:30] INFO: Epoch 37/100
+[2026-07-10 03:28:30] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 64.00%
+  Episode 200/400, Acc: 63.50%
+  Episode 300/400, Acc: 64.33%
+  Episode 400/400, Acc: 62.50%
+
+Result: 62.50% (250/400)
+Time: 0s
+[2026-07-10 03:29:30] INFO: Train Loss: 0.1063
+[2026-07-10 03:29:30] INFO: Val Loss: 0.2744 | Val Acc: 73.58%
+[2026-07-10 03:29:30] INFO: Test Acc (20-way 1-shot): 62.50%
+[2026-07-10 03:29:30] INFO: Epoch Time: 59s
+[2026-07-10 03:29:30] INFO: ============================================================
+[2026-07-10 03:29:30] INFO: Epoch 38/100
+[2026-07-10 03:29:30] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 68.00%
+  Episode 200/400, Acc: 68.50%
+  Episode 300/400, Acc: 69.33%
+  Episode 400/400, Acc: 66.50%
+
+Result: 66.50% (266/400)
+Time: 0s
+[2026-07-10 03:30:30] INFO: Train Loss: 0.1124
+[2026-07-10 03:30:30] INFO: Val Loss: 0.2716 | Val Acc: 73.84%
+[2026-07-10 03:30:30] INFO: Test Acc (20-way 1-shot): 66.50%
+[2026-07-10 03:30:30] INFO: Epoch Time: 59s
+[2026-07-10 03:30:30] INFO: ============================================================
+[2026-07-10 03:30:30] INFO: Epoch 39/100
+[2026-07-10 03:30:30] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 55.00%
+  Episode 200/400, Acc: 60.50%
+  Episode 300/400, Acc: 60.33%
+  Episode 400/400, Acc: 60.50%
+
+Result: 60.50% (242/400)
+Time: 0s
+[2026-07-10 03:31:29] INFO: Train Loss: 0.1045
+[2026-07-10 03:31:29] INFO: Val Loss: 0.2719 | Val Acc: 73.71%
+[2026-07-10 03:31:29] INFO: Test Acc (20-way 1-shot): 60.50%
+[2026-07-10 03:31:29] INFO: Epoch Time: 59s
+[2026-07-10 03:31:29] INFO: ============================================================
+[2026-07-10 03:31:29] INFO: Epoch 40/100
+[2026-07-10 03:31:29] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 63.00%
+  Episode 200/400, Acc: 64.00%
+  Episode 300/400, Acc: 63.33%
+  Episode 400/400, Acc: 62.50%
+
+Result: 62.50% (250/400)
+Time: 0s
+[2026-07-10 03:32:29] INFO: Train Loss: 0.1047
+[2026-07-10 03:32:29] INFO: Val Loss: 0.2748 | Val Acc: 74.01%
+[2026-07-10 03:32:29] INFO: Test Acc (20-way 1-shot): 62.50%
+[2026-07-10 03:32:29] INFO: Epoch Time: 59s
+[2026-07-10 03:32:29] INFO: ============================================================
+[2026-07-10 03:32:29] INFO: Epoch 41/100
+[2026-07-10 03:32:29] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 67.00%
+  Episode 200/400, Acc: 64.50%
+  Episode 300/400, Acc: 63.00%
+  Episode 400/400, Acc: 62.00%
+
+Result: 62.00% (248/400)
+Time: 0s
+[2026-07-10 03:33:29] INFO: Train Loss: 0.1073
+[2026-07-10 03:33:29] INFO: Val Loss: 0.2724 | Val Acc: 73.53%
+[2026-07-10 03:33:29] INFO: Test Acc (20-way 1-shot): 62.00%
+[2026-07-10 03:33:29] INFO: Epoch Time: 1m 0s
+[2026-07-10 03:33:29] INFO: ============================================================
+[2026-07-10 03:33:29] INFO: Epoch 42/100
+[2026-07-10 03:33:29] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 73.00%
+  Episode 200/400, Acc: 70.00%
+  Episode 300/400, Acc: 68.33%
+  Episode 400/400, Acc: 68.75%
+
+Result: 68.75% (275/400)
+Time: 0s
+[2026-07-10 03:34:30] INFO: Train Loss: 0.1087
+[2026-07-10 03:34:30] INFO: Val Loss: 0.2714 | Val Acc: 73.93%
+[2026-07-10 03:34:30] INFO: Test Acc (20-way 1-shot): 68.75%
+[2026-07-10 03:34:30] INFO: Epoch Time: 1m 0s
+[2026-07-10 03:34:30] INFO: ============================================================
+[2026-07-10 03:34:30] INFO: Epoch 43/100
+[2026-07-10 03:34:30] INFO: ============================================================
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 68.00%
+  Episode 200/400, Acc: 64.00%
+  Episode 300/400, Acc: 67.67%
+  Episode 400/400, Acc: 67.00%
+
+Result: 67.00% (268/400)
+Time: 0s
+[2026-07-10 03:35:29] INFO: Train Loss: 0.1068
+[2026-07-10 03:35:29] INFO: Val Loss: 0.2729 | Val Acc: 73.77%
+[2026-07-10 03:35:29] INFO: Test Acc (20-way 1-shot): 67.00%
+[2026-07-10 03:35:29] INFO: Epoch Time: 59s
+[2026-07-10 03:35:29] INFO: Early Stopping Triggered at Epoch 43
+[2026-07-10 03:35:29] INFO: No improvement for 20 epochs
+[2026-07-10 03:35:29] INFO: Best Test Acc: 71.25%
+[2026-07-10 03:35:29] INFO: ============================================================
+[2026-07-10 03:35:29] INFO: Training Done!
+[2026-07-10 03:35:29] INFO: Best Test Acc (20-way 1-shot): 71.25%
+[2026-07-10 03:35:29] INFO: Total Training Time: 43m 1s
+[2026-07-10 03:35:29] INFO: ============================================================
+GPU: NVIDIA A10
+Test alphabets: 7
+
+20-way 1-shot evaluation (400 episodes)...
+  Precomputed 1220 new embeddings (total: 1220)
+  Episode 100/400, Acc: 63.00%
+  Episode 200/400, Acc: 64.00%
+  Episode 300/400, Acc: 60.33%
+  Episode 400/400, Acc: 61.00%
+
+Result: 61.00% (244/400)
+Time: 0s
+[2026-07-10 03:35:31] INFO: ==================================================
+[2026-07-10 03:35:31] INFO: 20-way 1-shot Accuracy: 61.00%
+[2026-07-10 03:35:31] INFO: ==================================================
